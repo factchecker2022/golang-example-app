@@ -18,9 +18,8 @@ jobs:
        go-version: '^1.13.1' # The Go version to download (if necessary) and use.
     - run: go version
        
-    - name: Download cyclonedx-gomod
+    - name: Generate SBOM
       uses: CycloneDX/gh-gomod-generate-sbom@v1
       with:
        version: v1
-    - name: Generate SBOM
-      run: cyclonedx-gomod app -licenses -files -output bom.xml -main cmd/acme-app
+       args: mod -licenses -json -output bom.json
