@@ -18,8 +18,5 @@ jobs:
        go-version: '^1.13.1' # The Go version to download (if necessary) and use.
     - run: go version
        
-    - name: Generate SBOM
-      uses: CycloneDX/gh-gomod-generate-sbom@v1
-      with:
-       version: v1
-       args: mod -licenses -json -output bom.json
+    - uses: actions/checkout@v2
+    - uses: yusufpapurcu/go-license-checker@v0.5
