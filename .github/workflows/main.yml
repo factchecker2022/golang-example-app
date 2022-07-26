@@ -12,9 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      
-    - name: Generate SBOM
+       
+    - name: Download cyclonedx-gomod
       uses: CycloneDX/gh-gomod-generate-sbom@v1
       with:
        version: v1
-       args: mod -licenses -json -output bom.json
+    - name: Generate SBOM
+      run: cyclonedx-gomod app -licenses -files -output bom.xml -main cmd/acme-app
