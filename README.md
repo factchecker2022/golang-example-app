@@ -1,4 +1,5 @@
 ![golang logo](golang_logo.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffactchecker2022%2Fgolang-example-app.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffactchecker2022%2Fgolang-example-app?ref=badge_shield)
 
 # Golang Example Application
 
@@ -260,3 +261,7 @@ mutation createUser {
 ```
 ➜  make test
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffactchecker2022%2Fgolang-example-app.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffactchecker2022%2Fgolang-example-app?ref=badge_large)
