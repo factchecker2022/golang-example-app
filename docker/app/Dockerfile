@@ -11,7 +11,7 @@ COPY . .
 
 RUN GOOS=linux GOARCH=amd64 make build
 
-FROM alpine:3.9
+FROM alpine:3.13
 
 COPY --from=builder /build/docker/app/files /
 COPY --from=builder /build/artifacts /app/
